@@ -50,7 +50,7 @@ public class LoginController extends BaseController {
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public String login(String username, String password,@RequestParam(value = "rememberMe",defaultValue = "0") int rememberMe, ModelMap model) {
 		String ret = view(Views.LOGIN);
-		
+
 		if (StringUtils.isBlank(username) || StringUtils.isBlank(password)) {
             return ret;
         }

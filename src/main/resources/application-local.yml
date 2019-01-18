@@ -1,8 +1,8 @@
 # site.theme: [default|card]
 site:
-    theme: card
+    theme: default
     store:
-      root: d:/data/mblog/
+      root: /data/mblog/
       size: 2
 spring:
     datasource:
