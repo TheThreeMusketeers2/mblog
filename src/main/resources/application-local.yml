@@ -6,7 +6,7 @@ site:
       size: 2
 spring:
     datasource:
-        #schema: classpath*:config/db/db_mblog.sql
+        schema: classpath*:config/db/db_mblog.sql
         #initialization-mode: always
         #continue-on-error: false
         driver-class-name: com.mysql.jdbc.Driver
