@@ -61,7 +61,7 @@ public class PostController extends BaseController {
 	 * @return
 	 */
 	@PostMapping("/submit")
-	public String post(PostVO post,  @RequestParam(value = "file", required=false) MultipartFile file) throws IOException {
+	public String post(PostVO post,  @RequestParam(value = "file", required=false) MultipartFile file) throws Exception {
 		Assert.notNull(post, "参数不完整");
 		Assert.state(StringUtils.isNotBlank(post.getTitle()), "标题不能为空");
 		Assert.state(StringUtils.isNotBlank(post.getContent()), "内容不能为空");

@@ -57,7 +57,7 @@ public class ChannelController extends BaseController {
 		PostVO view = postService.get(id);
 
 		Assert.notNull(view, "该文章已被删除");
-
+		//TODO 自增浏览数 可使用异步事件发布模式
 		postService.identityViews(id);
 		model.put("view", view);
 		return view(Views.ROUTE_POST_VIEW);

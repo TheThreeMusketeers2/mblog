@@ -11,7 +11,9 @@ package com.mtons.mblog.base.upload;
 
 import org.springframework.web.multipart.MultipartFile;
 
+import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 
 /**
  * @author langhsu
@@ -25,7 +27,14 @@ public interface FileRepo {
 	 * @return
 	 * @throws IOException
 	 */
-	String store(MultipartFile file, String basePath) throws IOException;
+	String store(MultipartFile file, String basePath) throws Exception;
+    /**
+     * 存储图片
+     * @param inputStream
+     * @return
+     * @throws IOException
+     */
+	String store(InputStream inputStream) throws Exception;
 	
 	/**
 	 * 存储压缩图片
@@ -60,5 +69,9 @@ public interface FileRepo {
 	 * @param storePath
 	 */
 	void deleteFile(String storePath);
-
+    /**
+     * 下载图片
+     * @param path
+     */
+	String download(String path);
 }

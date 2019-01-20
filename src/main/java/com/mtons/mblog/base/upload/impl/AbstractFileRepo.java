@@ -29,7 +29,7 @@ import java.util.Iterator;
  * @author langhsu
  */
 public abstract class AbstractFileRepo implements FileRepo {
-    private Logger log = Logger.getLogger(this.getClass());
+    protected Logger log = Logger.getLogger(this.getClass());
 
     @Autowired
     protected AppContext appContext;
@@ -76,7 +76,7 @@ public abstract class AbstractFileRepo implements FileRepo {
     }
 
     @Override
-    public String store(MultipartFile file, String basePath) throws IOException {
+    public String store(MultipartFile file, String basePath) throws Exception {
         validateFile(file);
 
         String path = basePath + FileNameUtils.genPathAndFileName(getExt(file.getOriginalFilename()));
