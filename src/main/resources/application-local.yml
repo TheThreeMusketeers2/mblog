@@ -10,7 +10,7 @@ spring:
         #initialization-mode: always
         #continue-on-error: false
         driver-class-name: com.mysql.jdbc.Driver
-        url: jdbc:mysql://116.62.143.100/db_mblog?useSSL=false&characterEncoding=utf8
+        url: jdbc:mysql://xxxxx/db_mblog?useSSL=false&characterEncoding=utf8
         username: root
         password: 123456
     jpa:
@@ -31,5 +31,5 @@ aliyun:
       bucketName: mblog666
       endpoint: oss-cn-hangzhou.aliyuncs.com
       accessKeyId: LTAIkwOP3oxABoOp
-      secretAccessKey: Wl0RJIikmE5l34WBDekPq5Bsfdbcxb
+      secretAccessKey:
       remoteEndpoint: mblog666.oss-cn-hangzhou.aliyuncs.com
