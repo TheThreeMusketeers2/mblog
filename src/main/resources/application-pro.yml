@@ -31,5 +31,5 @@ aliyun:
       bucketName: mblog666
       endpoint: oss-cn-hangzhou.aliyuncs.com
       accessKeyId: LTAIkwOP3oxABoOp
-      secretAccessKey:
+      secretAccessKey: Wl0RJIikmE5l34WBDekPq5Bsfdbcxb
       remoteEndpoint: mblog666.oss-cn-hangzhou.aliyuncs.com
